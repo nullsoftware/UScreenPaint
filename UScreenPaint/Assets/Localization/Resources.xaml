@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <!--Menu Items-->
+    <s:String x:Key="AccessKey.File">_File</s:String>
+    <s:String x:Key="AccessKey.New">_New</s:String>
+    <s:String x:Key="AccessKey.Open">_Open...</s:String>
+    <s:String x:Key="AccessKey.Save">_Save</s:String>
+    <s:String x:Key="AccessKey.SaveAs">Save _As...</s:String>
+    <s:String x:Key="AccessKey.PrintPreview">Print S_etup...</s:String>
+    <s:String x:Key="AccessKey.Print">_Print...</s:String>
+    <s:String x:Key="AccessKey.Close">E_xit</s:String>
+
+    <s:String x:Key="AccessKey.Edit">_Edit</s:String>
+    <s:String x:Key="AccessKey.Undo">_Undo</s:String>
+    <s:String x:Key="AccessKey.Redo">_Redo</s:String>
+    <s:String x:Key="AccessKey.Cut">Cu_t</s:String>
+    <s:String x:Key="AccessKey.Copy">_Copy</s:String>
+    <s:String x:Key="AccessKey.Paste">_Paste</s:String>
+    <s:String x:Key="AccessKey.Delete">_Delete</s:String>
+    <s:String x:Key="AccessKey.Find">_Find...</s:String>
+    <s:String x:Key="AccessKey.Search">Find _Next</s:String>
+    <s:String x:Key="AccessKey.Replace">_Replace...</s:String>
+    <s:String x:Key="AccessKey.SelectAll">Select _All</s:String>
+    <s:String x:Key="AccessKey.ClearAll">Cl_ear All</s:String>
+    <s:String x:Key="AccessKey.AutoCorrection">Au_to Correction</s:String>
+
+    <s:String x:Key="AccessKey.Format">F_ormat</s:String>
+    <s:String x:Key="AccessKey.Encoding">_Encoding</s:String>
+    <s:String x:Key="AccessKey.Font">_Font...</s:String>
+    <s:String x:Key="AccessKey.TextWrap">_Text Wrap</s:String>
+
+    <s:String x:Key="AccessKey.Tools">_Tools</s:String>
+    <s:String x:Key="AccessKey.Update">_Update</s:String>
+    <s:String x:Key="AccessKey.Plugins">_Plugins</s:String>
+    <s:String x:Key="AccessKey.Options">_Options</s:String>
+
+    <s:String x:Key="AccessKey.View">_View</s:String>
+    <s:String x:Key="AccessKey.Topmost">_Topmost</s:String>
+
+    <s:String x:Key="AccessKey.Help">_Help</s:String>
+    <s:String x:Key="AccessKey.ViewHelp">View _Help</s:String>
+    <s:String x:Key="AccessKey.About">_About</s:String>
+
+    <!--Buttons-->
+    <s:String x:Key="OK">O_K</s:String>
+    <s:String x:Key="Cancel">Cancel</s:String>
+    <s:String x:Key="Close">Close</s:String>
+    
+    <!--Titles-->
+    <s:String x:Key="Editor">Editor</s:String>
+    <s:String x:Key="About">About</s:String>
+    
+    <!--Labels-->
+    <s:String x:Key="ToggleEditMode">Toggle Edit Mode</s:String>
+    <s:String x:Key="Version">Version</s:String>
+    <s:String x:Key="Copyright">Copyright © Null Software, 2023.</s:String>
+</ResourceDictionary>
