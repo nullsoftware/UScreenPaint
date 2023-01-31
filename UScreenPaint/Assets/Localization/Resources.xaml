@@ -54,6 +54,15 @@
     
     <!--Labels-->
     <s:String x:Key="ToggleEditMode">Toggle Edit Mode</s:String>
+    <s:String x:Key="Ink">Ink</s:String>
+    <s:String x:Key="Gesture">Gesture</s:String>
+    <s:String x:Key="EraserByPoint">Eraser By Point</s:String>
+    <s:String x:Key="EraserByStroke">Eraser By Stroke</s:String>
+    <s:String x:Key="Select">Select</s:String>
+    <s:String x:Key="Highlighter">Highlighter</s:String>
+    <s:String x:Key="InkSize">Ink Size</s:String>
+    <s:String x:Key="InkColor">Ink Color</s:String>
+    
     <s:String x:Key="Version">Version</s:String>
     <s:String x:Key="Copyright">Copyright © Null Software, 2023.</s:String>
     <s:String x:Key="ViewLicenseAgreement">View license agreement</s:String>

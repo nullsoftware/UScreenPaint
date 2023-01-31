@@ -57,7 +57,7 @@
                     <icon:PackIconEntypo Kind="Palette"/>
                 </CheckBox>
                 <Separator/>
-                <RadioButton>
+                <RadioButton ToolTip="{DynamicResource Ink}">
                     <RadioButton.IsChecked>
                         <Binding Path="EditingMode" Mode="TwoWay"
                                  Converter="{StaticResource EnumToBooleanConverter}">
@@ -73,7 +73,7 @@
                         </icon:PackIconEntypo.Effect>
                     </icon:PackIconEntypo>
                 </RadioButton>
-                <RadioButton>
+                <RadioButton  ToolTip="{DynamicResource Gesture}">
                     <RadioButton.IsChecked>
                         <Binding Path="EditingMode" Mode="TwoWay"
                                  Converter="{StaticResource EnumToBooleanConverter}">
@@ -89,7 +89,7 @@
                         </icon:PackIconEntypo.Effect>
                     </icon:PackIconEntypo>
                 </RadioButton>
-                <RadioButton>
+                <RadioButton  ToolTip="{DynamicResource EraserByPoint}">
                     <RadioButton.IsChecked>
                         <Binding Path="EditingMode" Mode="TwoWay"
                                  Converter="{StaticResource EnumToBooleanConverter}">
@@ -105,7 +105,7 @@
                         </icon:PackIconEntypo.Effect>
                     </icon:PackIconEntypo>
                 </RadioButton>
-                <RadioButton>
+                <RadioButton  ToolTip="{DynamicResource EraserByStroke}">
                     <RadioButton.IsChecked>
                         <Binding Path="EditingMode" Mode="TwoWay"
                                  Converter="{StaticResource EnumToBooleanConverter}">
@@ -121,7 +121,7 @@
                         </icon:PackIconEntypo.Effect>
                     </icon:PackIconEntypo>
                 </RadioButton>
-                <RadioButton>
+                <RadioButton ToolTip="{DynamicResource Select}">
                     <RadioButton.IsChecked>
                         <Binding Path="EditingMode" Mode="TwoWay"
                                  Converter="{StaticResource EnumToBooleanConverter}">
@@ -134,11 +134,11 @@
                     <icon:PackIconEntypo Kind="FlowLine"/>
                 </RadioButton>
                 <Separator/>
-                <CheckBox IsChecked="{Binding IsHighlighter, Mode=TwoWay}">
+                <CheckBox ToolTip="{DynamicResource Highlighter}" IsChecked="{Binding IsHighlighter, Mode=TwoWay}">
                     <icon:PackIconEntypo Kind="Brush"/>
                 </CheckBox>
                 <Separator/>
-                <ctrl:PopupButton>
+                <ctrl:PopupButton ToolTip="{DynamicResource InkSize}">
                     <ctrl:PopupButton.PopupContent>
                         <Border Height="Auto" Width="200"
                                 BorderThickness="1"
@@ -181,7 +181,8 @@
                 </ComboBox>-->
                 <ComboBox VerticalAlignment="Stretch" Padding="4"
                           ItemsSource="{Binding AvaliableColors}"
-                          SelectedItem="{Binding DrawingAttributes.Color}">
+                          SelectedItem="{Binding DrawingAttributes.Color}"
+                          ToolTip="{DynamicResource InkColor}">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <Rectangle Width="16" Height="16" StrokeThickness="1.5" 
