@@ -11,7 +11,7 @@
         Title="{DynamicResource About}"
         ResizeMode="NoResize"
         SizeToContent="Height"
-        Height="Auto" Width="400"
+        Height="Auto" Width="380"
         WindowStartupLocation="CenterScreen"
         TextOptions.TextFormattingMode="Display"
         ShowInTaskbar="False"
@@ -45,7 +45,7 @@
             <StackPanel DockPanel.Dock="Top"
                         VerticalAlignment="Top"
                         HorizontalAlignment="Center"
-                        Margin="10, 20, 10, 0"
+                        Margin="10, 30, 10, 0"
                         Orientation="Horizontal"
                         TextOptions.TextFormattingMode="Ideal">
                 <Border Padding="10, 2" CornerRadius="5" Background="Purple">
