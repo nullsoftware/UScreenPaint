@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:UScreenPaint.Views"
         xmlns:global="clr-namespace:UScreenPaint"
         xmlns:vm="clr-namespace:UScreenPaint.ViewModels"
+        xmlns:tk="https://github.com/nullsoftware/UToolKit"
         mc:Ignorable="d"
         Title="{DynamicResource About}"
         ResizeMode="NoResize"
@@ -78,13 +79,15 @@
                        HorizontalAlignment="Center"
                        Margin="10, 30, 10, 50">
                 <Run Text=" >"/>
-                <Hyperlink>
-                    <Run Text="View license agreement"/>
+                <Hyperlink NavigateUri="https://github.com/nullsoftware/UScreenPaint/blob/master/LICENSE.md"
+                           tk:HyperlinkExtensions.IsExternal="True">
+                    <Run Text="{DynamicResource ViewLicenseAgreement}"/>
                 </Hyperlink>
                 <LineBreak/>
                 <Run Text=" >"/>
-                <Hyperlink>
-                    <Run Text="View more information online"/>
+                <Hyperlink NavigateUri="https://github.com/nullsoftware/UScreenPaint"
+                           tk:HyperlinkExtensions.IsExternal="True">
+                    <Run Text="{DynamicResource ViewMoreInformationOnline}"/>
                 </Hyperlink>
             </TextBlock>
         </DockPanel>

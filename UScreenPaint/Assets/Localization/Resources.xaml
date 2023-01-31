@@ -56,4 +56,6 @@
     <s:String x:Key="ToggleEditMode">Toggle Edit Mode</s:String>
     <s:String x:Key="Version">Version</s:String>
     <s:String x:Key="Copyright">Copyright © Null Software, 2023.</s:String>
+    <s:String x:Key="ViewLicenseAgreement">View license agreement</s:String>
+    <s:String x:Key="ViewMoreInformationOnline">View more information online</s:String>
 </ResourceDictionary>
