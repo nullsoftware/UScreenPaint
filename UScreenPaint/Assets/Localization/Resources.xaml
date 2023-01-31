@@ -8,8 +8,6 @@
     <s:String x:Key="AccessKey.Open">_Open...</s:String>
     <s:String x:Key="AccessKey.Save">_Save</s:String>
     <s:String x:Key="AccessKey.SaveAs">Save _As...</s:String>
-    <s:String x:Key="AccessKey.PrintPreview">Print S_etup...</s:String>
-    <s:String x:Key="AccessKey.Print">_Print...</s:String>
     <s:String x:Key="AccessKey.Close">E_xit</s:String>
 
     <s:String x:Key="AccessKey.Edit">_Edit</s:String>
@@ -19,21 +17,12 @@
     <s:String x:Key="AccessKey.Copy">_Copy</s:String>
     <s:String x:Key="AccessKey.Paste">_Paste</s:String>
     <s:String x:Key="AccessKey.Delete">_Delete</s:String>
-    <s:String x:Key="AccessKey.Find">_Find...</s:String>
-    <s:String x:Key="AccessKey.Search">Find _Next</s:String>
-    <s:String x:Key="AccessKey.Replace">_Replace...</s:String>
     <s:String x:Key="AccessKey.SelectAll">Select _All</s:String>
     <s:String x:Key="AccessKey.ClearAll">Cl_ear All</s:String>
     <s:String x:Key="AccessKey.AutoCorrection">Au_to Correction</s:String>
 
-    <s:String x:Key="AccessKey.Format">F_ormat</s:String>
-    <s:String x:Key="AccessKey.Encoding">_Encoding</s:String>
-    <s:String x:Key="AccessKey.Font">_Font...</s:String>
-    <s:String x:Key="AccessKey.TextWrap">_Text Wrap</s:String>
-
     <s:String x:Key="AccessKey.Tools">_Tools</s:String>
     <s:String x:Key="AccessKey.Update">_Update</s:String>
-    <s:String x:Key="AccessKey.Plugins">_Plugins</s:String>
     <s:String x:Key="AccessKey.Options">_Options</s:String>
 
     <s:String x:Key="AccessKey.View">_View</s:String>

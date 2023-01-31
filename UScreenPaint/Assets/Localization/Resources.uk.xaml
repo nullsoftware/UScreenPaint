@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <!--Menu Items-->
+    <s:String x:Key="AccessKey.File">_Файл</s:String>
+    <s:String x:Key="AccessKey.New">_Створити</s:String>
+    <s:String x:Key="AccessKey.Open">_Відкрити...</s:String>
+    <s:String x:Key="AccessKey.Save">_Зберегти</s:String>
+    <s:String x:Key="AccessKey.SaveAs">Зберегти _як...</s:String>
+    <s:String x:Key="AccessKey.Close">В_ихід</s:String>
+
+    <s:String x:Key="AccessKey.Edit">_Правка</s:String>
+    <s:String x:Key="AccessKey.Undo">_Скасувати</s:String>
+    <s:String x:Key="AccessKey.Redo">_Повторити</s:String>
+    <s:String x:Key="AccessKey.Cut">_Вирізати</s:String>
+    <s:String x:Key="AccessKey.Copy">_Копіювати</s:String>
+    <s:String x:Key="AccessKey.Paste">Вст_авити</s:String>
+    <s:String x:Key="AccessKey.Delete">В_идалити</s:String>
+    <s:String x:Key="AccessKey.SelectAll">Виділити в_се</s:String>
+    <s:String x:Key="AccessKey.ClearAll">_Очистити все</s:String>
+    <s:String x:Key="AccessKey.AutoCorrection">А_втокорекція</s:String>
+
+    <s:String x:Key="AccessKey.Tools">_Інструменти</s:String>
+    <s:String x:Key="AccessKey.Update">_Оновлення</s:String>
+    <s:String x:Key="AccessKey.Options">_Опції</s:String>
+
+    <s:String x:Key="AccessKey.View">_Вид</s:String>
+    <s:String x:Key="AccessKey.Topmost">_Поверх всіх вікон</s:String>
+
+    <s:String x:Key="AccessKey.Help">_Довідка</s:String>
+    <s:String x:Key="AccessKey.ViewHelp">_Переглянути довідку</s:String>
+    <s:String x:Key="AccessKey.About">_Про програму</s:String>
+
+    <!--Buttons-->
+    <s:String x:Key="OK">О_К</s:String>
+    <s:String x:Key="Cancel">Скасувати</s:String>
+    <s:String x:Key="Close">Закрити</s:String>
+    
+    <!--Titles-->
+    <s:String x:Key="Editor">Редактор</s:String>
+    <s:String x:Key="About">Про програму</s:String>
+    
+    <!--Labels-->
+    <s:String x:Key="ToggleEditMode">Переключити режим редагування</s:String>
+    <s:String x:Key="Ink">Ручка</s:String>
+    <s:String x:Key="Gesture">Зникающа ручка</s:String>
+    <s:String x:Key="EraserByPoint">Гумка по точках</s:String>
+    <s:String x:Key="EraserByStroke">Гумка по штриху</s:String>
+    <s:String x:Key="Select">Вибрати</s:String>
+    <s:String x:Key="Highlighter">Маркер</s:String>
+    <s:String x:Key="InkSize">Розмір чорнила</s:String>
+    <s:String x:Key="InkColor">Колір чорнила</s:String>
+
+    <s:String x:Key="Version">Версія</s:String>
+    <s:String x:Key="Copyright">Авторські права © Null Software, 2023.</s:String>
+    <s:String x:Key="ViewLicenseAgreement">Переглянути ліцензійну угоду</s:String>
+    <s:String x:Key="ViewMoreInformationOnline">Переглянути більше інформації онлайн</s:String>
+</ResourceDictionary>

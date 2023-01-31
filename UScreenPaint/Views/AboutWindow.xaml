@@ -32,7 +32,7 @@
                     Command="{Binding CloseCommand}"
                     IsDefault="True"
                     IsCancel="True"
-                    Content="O_K"/>
+                    Content="{DynamicResource OK}"/>
 
             <TextBlock VerticalAlignment="Center"
                        HorizontalAlignment="Left"
