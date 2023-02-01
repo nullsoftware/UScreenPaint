@@ -53,7 +53,6 @@
     <s:String x:Key="InkColor">Цвет чернил</s:String>
 
     <s:String x:Key="Version">Версия</s:String>
-    <s:String x:Key="Copyright">Авторские права © Null Software, 2023.</s:String>
     <s:String x:Key="ViewLicenseAgreement">Посмотреть лицензионное соглашение</s:String>
     <s:String x:Key="ViewMoreInformationOnline">Посмотреть больше информации онлайн</s:String>
 </ResourceDictionary>

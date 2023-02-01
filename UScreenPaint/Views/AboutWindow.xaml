@@ -38,7 +38,7 @@
                        HorizontalAlignment="Left"
                        Margin="15, 10"
                        Foreground="Gray"
-                       Text="{DynamicResource Copyright}"/>
+                       Text="Copyright © Null Software, 2023."/>
         </DockPanel>
 
         <DockPanel Grid.Row="0">
