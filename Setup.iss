@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "UScreenPaint"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Null Software"
 #define MyAppURL "https://github.com/nullsoftware/UScreenPaint"
 #define MyAppExeName "UScreenPaint.exe"
@@ -25,10 +25,11 @@ DisableWelcomePage=no
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputBaseFilename=usp-setup
+OutputBaseFilename=usp-setup-{#MyAppVersion}
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+OutputDir=".\UScreenPaint\bin\Setup"
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
