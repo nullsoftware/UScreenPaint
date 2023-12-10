@@ -7,5 +7,6 @@
     <cv:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
     <cv:InverseColorToBrushConverter x:Key="InverseColorToBrushConverter"/>
     <cv:InkCanvasEditingModeToCursorConverter x:Key="InkCanvasEditingModeToCursorConverter"/>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
 
 </ResourceDictionary>

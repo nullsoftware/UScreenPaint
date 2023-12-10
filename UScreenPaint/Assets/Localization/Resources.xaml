@@ -34,11 +34,13 @@
 
     <!--Buttons-->
     <s:String x:Key="OK">O_K</s:String>
+    <s:String x:Key="Open">Open</s:String>
     <s:String x:Key="Cancel">Cancel</s:String>
     <s:String x:Key="Close">Close</s:String>
     
     <!--Titles-->
     <s:String x:Key="Editor">Editor</s:String>
+    <s:String x:Key="OpenImage">Open Image...</s:String>
     <s:String x:Key="About">About</s:String>
     
     <!--Labels-->

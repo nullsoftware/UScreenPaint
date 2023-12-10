@@ -34,11 +34,13 @@
 
     <!--Buttons-->
     <s:String x:Key="OK">О_К</s:String>
+    <s:String x:Key="Open">Відкрити</s:String>
     <s:String x:Key="Cancel">Скасувати</s:String>
     <s:String x:Key="Close">Закрити</s:String>
     
     <!--Titles-->
     <s:String x:Key="Editor">Редактор</s:String>
+    <s:String x:Key="OpenImage">Відкрити зображення...</s:String>
     <s:String x:Key="About">Про програму</s:String>
     
     <!--Labels-->

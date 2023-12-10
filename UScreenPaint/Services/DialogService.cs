@@ -35,6 +35,15 @@ namespace UScreenPaint.Services
             return new WindowService(win);
         }
 
+        public bool ShowOpenImageDialog(OpenImageViewModel viewModel)
+        {
+            OpenImageDialog dialog = new OpenImageDialog();
+            dialog.DataContext = viewModel;
+            dialog.Owner = _owner;
+
+            return dialog.ShowDialog() == true;
+        }
+
         public void ShowAboutInfo()
         {
             if (_aboutWindow == null)

@@ -39,10 +39,10 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-Source: ".\bin\Release\UScreenPaint.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: ".\bin\Release\MahApps.Metro.IconPacks.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: ".\bin\Release\MahApps.Metro.IconPacks.Entypo.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: ".\bin\Release\UToolKit.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\UScreenPaint\bin\Release\UScreenPaint.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\UScreenPaint\bin\Release\MahApps.Metro.IconPacks.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\UScreenPaint\bin\Release\MahApps.Metro.IconPacks.Entypo.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\UScreenPaint\bin\Release\UToolKit.dll"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
