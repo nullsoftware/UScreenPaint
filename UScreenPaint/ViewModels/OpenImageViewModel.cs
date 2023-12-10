@@ -27,7 +27,7 @@ namespace UScreenPaint.ViewModels
 
         public OpenImageViewModel(IEnumerable<VectorImage> images) 
         {
-            Images = new ObservableCollection<VectorImage>(images);
+            Images = new ObservableCollection<VectorImage>(images.OrderByDescending(t => t.Timestamp));
 
             ConfirmCommand = new RelayCommand<Window>(Confirm, CanConfirm);
             RemoveCommand = new RelayCommand<VectorImage>(Remove);
