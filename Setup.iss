@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "UScreenPaint"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "Null Software"
 #define MyAppURL "https://github.com/nullsoftware/UScreenPaint"
 #define MyAppExeName "UScreenPaint.exe"
