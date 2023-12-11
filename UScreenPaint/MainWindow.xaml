@@ -19,6 +19,8 @@
     Background="#01000000"
     Opacity="{Binding IsEditModeEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BooleanToInt32Converter}}"
     Cursor="{Binding EditingMode, Mode=OneWay, Converter={StaticResource InkCanvasEditingModeToCursorConverter}}"
+    UseLayoutRounding="True"
+    SnapsToDevicePixels="False"
     ForceCursor="true">
     <Window.DataContext>
         <vm:MainViewModel />
@@ -38,6 +40,7 @@
             Background="Transparent"
             EditingMode="{Binding EditingMode, Mode=OneWay}"
             DefaultDrawingAttributes="{Binding DrawingAttributes, Mode=OneWay}"
-            Strokes="{Binding Strokes, Mode=OneWay}" />
+            Strokes="{Binding Strokes, Mode=OneWay}" 
+            RenderOptions.BitmapScalingMode="HighQuality"/>
     </Grid>
 </Window>

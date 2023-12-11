@@ -20,6 +20,7 @@
     <s:String x:Key="AccessKey.SelectAll">Виділити в_се</s:String>
     <s:String x:Key="AccessKey.ClearAll">_Очистити все</s:String>
     <s:String x:Key="AccessKey.AutoCorrection">А_втокорекція</s:String>
+    <s:String x:Key="AccessKey.FillScreen">Заповнити екран</s:String>
 
     <s:String x:Key="AccessKey.Tools">_Інструменти</s:String>
     <s:String x:Key="AccessKey.Update">_Оновлення</s:String>

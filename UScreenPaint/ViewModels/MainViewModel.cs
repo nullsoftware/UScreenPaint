@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Ink;
+using System.Windows.Input;
 using System.Windows.Media;
 using NullSoftware;
 using NullSoftware.Services;
@@ -69,6 +70,9 @@ namespace UScreenPaint.ViewModels
         public IRefreshableCommand ClearAllCommand { get; }
 
         [DoNotNotify]
+        public IRefreshableCommand FillScreenCommand { get; }
+
+        [DoNotNotify]
         public IRefreshableCommand ShowAboutCommand { get; }
 
         public MainViewModel()
@@ -82,6 +86,7 @@ namespace UScreenPaint.ViewModels
             OpenCommand = new RelayCommand(Open);
             ToggleEditModeCommand = new RelayCommand(() => IsEditModeEnabled = !IsEditModeEnabled);
             CloseCommand = new RelayCommand(_mainWindow.Close);
+            FillScreenCommand = new RelayCommand(FillScreen);
             ClearAllCommand = new RelayCommand(CreateNew);
             ShowAboutCommand = new RelayCommand(_dialogService.ShowAboutInfo);
 
@@ -143,5 +148,52 @@ namespace UScreenPaint.ViewModels
             DrawingAttributes.Height = InkSize;
             DrawingAttributes.Width = InkSize;
         }
+
+        private void FillScreen()
+        {
+            DrawingAttributes attrib = DrawingAttributes.Clone();
+            attrib.FitToCurve = false;
+            attrib.Width = 12;
+            attrib.Height = 12;
+
+            var spCollection = new StylusPointCollection()
+            {
+                //new StylusPoint(0,10),
+                //new StylusPoint(6,0),
+                //new StylusPoint(12,10),
+                //new StylusPoint(0,10),
+            };
+
+            int width = (int)SystemParameters.PrimaryScreenWidth;
+            int height = (int)SystemParameters.PrimaryScreenHeight;
+            int errorX = 6; //Math.Max(1, (int)(attrib.Width));
+            int errorY = 6; // Math.Max(1, (int)(attrib.Height));
+
+            bool odd = false;
+            for (int y = 0; y < height; y += errorY)
+            {
+                if (odd)
+                {
+                    for (int x = 0; x < width; x += errorX)
+                    {
+                        spCollection.Add(new StylusPoint(x, y));
+                    }
+                }
+                else
+                {
+                    for (int x = (width - 1); x >= 0; x -= errorX)
+                    {
+                        spCollection.Add(new StylusPoint(x, y));
+                    }
+                }
+
+                odd = !odd;
+
+            }
+
+            Strokes.Add(new Stroke(spCollection, attrib));
+        }
+
+
     }
 }

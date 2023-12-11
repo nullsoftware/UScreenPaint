@@ -20,6 +20,7 @@
     <s:String x:Key="AccessKey.SelectAll">Select _All</s:String>
     <s:String x:Key="AccessKey.ClearAll">Cl_ear All</s:String>
     <s:String x:Key="AccessKey.AutoCorrection">Au_to Correction</s:String>
+    <s:String x:Key="AccessKey.FillScreen">Fill Screen</s:String>
 
     <s:String x:Key="AccessKey.Tools">_Tools</s:String>
     <s:String x:Key="AccessKey.Update">_Update</s:String>

@@ -60,7 +60,14 @@
                     IsCheckable="True"
                     IsChecked="{Binding DrawingAttributes.FitToCurve, Mode=TwoWay}"
                     Header="{DynamicResource AccessKey.AutoCorrection}" />
-                <Separator />
+                <Separator/>
+                <MenuItem
+                    Command="{Binding FillScreenCommand}"
+                    Header="{DynamicResource AccessKey.FillScreen}">
+                    <MenuItem.Icon>
+                        <icon:PackIconEntypo Kind="Blackboard" />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <MenuItem
                     Command="{Binding ClearAllCommand}"
                     Header="{DynamicResource AccessKey.ClearAll}" />
