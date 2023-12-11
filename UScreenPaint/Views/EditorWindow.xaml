@@ -20,6 +20,12 @@
     tk:WindowExtensions.CloseCommand="{Binding CloseCommand}"
     d:DataContext="{d:DesignInstance vm:MainViewModel}"
     TextOptions.TextFormattingMode="Display">
+    <Window.InputBindings>
+        <KeyBinding Key="N" Modifiers="Control" Command="{Binding CreateNewCommand}"/>
+        <KeyBinding Key="O" Modifiers="Control" Command="{Binding OpenCommand}"/>
+        <KeyBinding Key="S" Modifiers="Control" Command="{Binding SaveCommand}"/>
+    </Window.InputBindings>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -30,13 +36,16 @@
             <MenuItem Header="{DynamicResource AccessKey.File}">
                 <MenuItem
                     Command="{Binding CreateNewCommand}"
-                    Header="{DynamicResource AccessKey.New}" />
+                    Header="{DynamicResource AccessKey.New}"
+                    InputGestureText="Ctrl+N" />
                 <MenuItem
                     Command="{Binding OpenCommand}"
-                    Header="{DynamicResource AccessKey.Open}" />
+                    Header="{DynamicResource AccessKey.Open}"
+                    InputGestureText="Ctrl+O" />
                 <MenuItem
                     Command="{Binding SaveCommand}"
-                    Header="{DynamicResource AccessKey.Save}" />
+                    Header="{DynamicResource AccessKey.Save}"
+                    InputGestureText="Ctrl+S" />
                 <Separator />
                 <MenuItem
                     Command="{Binding CloseCommand}"
