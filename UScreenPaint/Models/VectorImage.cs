@@ -22,6 +22,8 @@ namespace UScreenPaint.Models
 
         public int Height { get; set; }
 
+        public bool ShouldCompress { get; set; }
+
         public StrokeCollection Strokes { get; set; }
 
         public string FileName { get; set; }
@@ -36,7 +38,7 @@ namespace UScreenPaint.Models
                 writer.Write(img.Timestamp.Ticks);
                 writer.Write(img.Width);
                 writer.Write(img.Height);
-                img.Strokes.Save(stream);
+                img.Strokes.Save(stream, img.ShouldCompress);
             }
         }
 
