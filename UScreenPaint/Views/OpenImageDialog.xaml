@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:UScreenPaint.Views"
     xmlns:vm="clr-namespace:UScreenPaint.ViewModels"
+    xmlns:cv="clr-namespace:UScreenPaint.ToolKit.Converters"
     xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
     mc:Ignorable="d"
     ShowInTaskbar="False"
@@ -17,6 +18,10 @@
     ResizeMode="CanResizeWithGrip"
     Height="450"
     Width="600">
+    <Window.Resources>
+        <cv:StrokesToBitmapSourceConverter x:Key="StrokesToBitmapSourceConverter"/>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -68,16 +73,7 @@
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
 
-                        <Viewbox Grid.Row="0">
-                            <InkCanvas
-                                Background="Transparent"
-                                Grid.Row="0"
-                                Strokes="{Binding Strokes}"
-                                Focusable="False"
-                                IsEnabled="False"
-                                Width="{Binding Width}"
-                                Height="{Binding Height}" />
-                        </Viewbox>
+                        <Image Grid.Row="0" Source="{Binding Converter={StaticResource StrokesToBitmapSourceConverter}, Mode=OneTime}" RenderOptions.BitmapScalingMode="HighQuality"/>
 
                         <TextBlock
                             Grid.Row="1"

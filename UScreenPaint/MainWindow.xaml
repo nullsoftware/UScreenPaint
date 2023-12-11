@@ -13,7 +13,7 @@
     WindowState="Maximized"
     ResizeMode="NoResize"
     ShowInTaskbar="False"
-    Topmost="True"
+    Topmost="{Binding Topmost, Mode=TwoWay}"
     WindowStyle="None"
     AllowsTransparency="True"
     Background="#01000000"
@@ -28,6 +28,8 @@
         <KeyBinding Key="N" Modifiers="Control" Command="{Binding CreateNewCommand}"/>
         <KeyBinding Key="O" Modifiers="Control" Command="{Binding OpenCommand}"/>
         <KeyBinding Key="S" Modifiers="Control" Command="{Binding SaveCommand}"/>
+
+        <KeyBinding Key="E" Modifiers="Alt" Command="{Binding ToggleEditModeCommand}"/>
     </Window.InputBindings>
 
     <Grid>

@@ -22,6 +22,8 @@ namespace UScreenPaint.ViewModels
         private IWindowService _editorWindow;
         private IImagesStorage _imagesStorage;
 
+        public bool Topmost { get; set; }
+
         public bool IsEditModeEnabled { get; set; } = true;
 
         [OnChangedMethod(nameof(OnIsHighlighterChanged))]
@@ -61,6 +63,9 @@ namespace UScreenPaint.ViewModels
         public IRefreshableCommand CloseCommand { get; }
 
         [DoNotNotify]
+        public IRefreshableCommand ToggleEditModeCommand { get; }
+
+        [DoNotNotify]
         public IRefreshableCommand ClearAllCommand { get; }
 
         [DoNotNotify]
@@ -75,8 +80,9 @@ namespace UScreenPaint.ViewModels
             CreateNewCommand = new RelayCommand(CreateNew);
             SaveCommand = new RelayCommand(Save, CanSave);
             OpenCommand = new RelayCommand(Open);
+            ToggleEditModeCommand = new RelayCommand(() => IsEditModeEnabled = !IsEditModeEnabled);
             CloseCommand = new RelayCommand(_mainWindow.Close);
-            ClearAllCommand = new RelayCommand(Strokes.Clear);
+            ClearAllCommand = new RelayCommand(CreateNew);
             ShowAboutCommand = new RelayCommand(_dialogService.ShowAboutInfo);
 
             DrawingAttributes = new DrawingAttributes()
@@ -122,6 +128,7 @@ namespace UScreenPaint.ViewModels
             if (_dialogService.ShowOpenImageDialog(viewModel))
             {
                 Strokes = viewModel.SelectedImage.Strokes;
+                IsEditModeEnabled = true;
             }
         }
 

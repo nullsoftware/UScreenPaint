@@ -11,7 +11,7 @@
     xmlns:ctrl="clr-namespace:UScreenPaint.Controls"
     xmlns:tk="https://github.com/nullsoftware/UToolKit"
     mc:Ignorable="d"
-    Topmost="True"
+    Topmost="{Binding Topmost, Mode=TwoWay}"
     Title="Screen Paint"
     ResizeMode="NoResize"
     Height="Auto"
@@ -20,11 +20,6 @@
     tk:WindowExtensions.CloseCommand="{Binding CloseCommand}"
     d:DataContext="{d:DesignInstance vm:MainViewModel}"
     TextOptions.TextFormattingMode="Display">
-    <Window.InputBindings>
-        <KeyBinding Key="N" Modifiers="Control" Command="{Binding CreateNewCommand}"/>
-        <KeyBinding Key="O" Modifiers="Control" Command="{Binding OpenCommand}"/>
-        <KeyBinding Key="S" Modifiers="Control" Command="{Binding SaveCommand}"/>
-    </Window.InputBindings>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -45,11 +40,19 @@
                 <MenuItem
                     Command="{Binding SaveCommand}"
                     Header="{DynamicResource AccessKey.Save}"
-                    InputGestureText="Ctrl+S" />
+                    InputGestureText="Ctrl+S">
+                    <MenuItem.Icon>
+                        <icon:PackIconEntypo Kind="Save"/>
+                    </MenuItem.Icon>
+                </MenuItem>
                 <Separator />
                 <MenuItem
                     Command="{Binding CloseCommand}"
-                    Header="{DynamicResource AccessKey.Close}" />
+                    Header="{DynamicResource AccessKey.Close}">
+                    <MenuItem.Icon>
+                        <icon:PackIconEntypo Kind="LogOut"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
 
             <MenuItem Header="{DynamicResource AccessKey.Edit}">
@@ -66,7 +69,7 @@
             <MenuItem Header="{DynamicResource AccessKey.View}">
                 <MenuItem
                     IsCheckable="True"
-                    IsChecked="{Binding ElementName=CurrentWindow, Path=Topmost, Mode=TwoWay}"
+                    IsChecked="{Binding Topmost, Mode=TwoWay}"
                     Header="{DynamicResource AccessKey.Topmost}" />
             </MenuItem>
 

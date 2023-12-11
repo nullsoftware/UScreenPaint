@@ -27,6 +27,7 @@ namespace UScreenPaint.Services
             await _owner.Dispatcher.BeginInvoke(new Action(() => 
             {
                 win = new EditorWindow();
+                win.InputBindings.AddRange(_owner.InputBindings);
                 win.Owner = _owner;
                 win.DataContext = _owner.DataContext;
                 win.Show();
