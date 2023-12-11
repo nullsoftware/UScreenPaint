@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 using NullSoftware.Services;
 using UScreenPaint.ViewModels;
 using UScreenPaint.Views;
@@ -31,7 +32,8 @@ namespace UScreenPaint.Services
                 win.Owner = _owner;
                 win.DataContext = _owner.DataContext;
                 win.Show();
-            }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
+            }), 
+            DispatcherPriority.ApplicationIdle);
 
             return new WindowService(win);
         }
