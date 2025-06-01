@@ -1,8 +1,11 @@
 # UScreenPaint
-Useful tool that allows to draw on your desktop.
+Draw Directly on Your Desktop!  
+
+Unleash your creativity with UScreenPaint, a powerful yet simple vector-based drawing tool. Mark up, highlight, or simply doodle directly on your Windows desktop. Easily toggle on/off at any time.  
+
 Features:
 - Vector-based drawing
-- A varios editing tools
+- A various editing tools
 - Suitable for any Windows devices
 - Can easly be turned off/on at runtime
 
